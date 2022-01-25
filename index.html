@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>ModerlViewerを使ったWebARページ</title>
+    <title>WebAR_Test</title>
   </head>
   <body>
   <script 
@@ -12,19 +11,33 @@
 
   </script>
 
+
     <model-viewer  
     ar
-    alt="Monkeytest"
+
+
+
+    alt="MonkeyTest"
     src="monkeytest.glb" 
     ios-src="monkeyios.usdz" 
 
-    style="width:800px;height:1000px;"                  
 
-    background-color="#70BCD1"
+
+    ar-modes="scene-viewer quick-look"
+    style="height: 100%;"
+    ar-scale="fixed"                 
+    background-color="#efe3c1"
     shadow-intensity="0.7"
-    camera-controls
+    camera-controls=""
+    autoplay=""
+    quick-look-browsers="safari chrome"
     interaction-prompt="auto"
-    auto-rotate ar magic-leap>
+    auto-rotate=""
+    ar=""
+    magic-leap=""
+    data-js-focus-visible=""
+    ar-status="not-presenting"  >
+ 
 
 
     </model-viewer>
